@@ -146,7 +146,7 @@ int main(){
                 printf("\nEnter 1 for yes, and 2 for no: \n");
                 scanf("%d", &choice);
 
-                if(choice == 1 || choice == 2)
+                if(choice < 1 || choice > 2)
                 {
                     printf("Enter an appropriate number.\n");
                 }
