@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /*
-An interesting problem that I solved. Input is a continuous string inclusive of any digit, any letter, and all special characters. The output has to be the frequency of all digits  from 0 to 9.
+An interesting problem that I solved. Input is a continuous string inclusive of any digit, any letter, and all special characters. The output has to be the frequency of all digits from 0 to 9.
 For Example:
 Input: 123456789abcdef123456789000
 Output: 0:3, 1: 2, 2: 2, 3: 2, 4: 2, 5: 2, 6: 2, 7: 2, 8: 2, 9: 2.
