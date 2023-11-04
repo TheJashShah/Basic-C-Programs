@@ -11,11 +11,15 @@ Input:
 5 4 4 -> n, x, y
 9 3 4
 11 5 11
+11 2 11
+11 7 10
 
 Output:
 0
 1
 0
+1
+1
 */
 
 int main(){
@@ -53,29 +57,31 @@ int main(){
             }
             else{
                 if(y > x){
-                    dif = abs(y - center);
-                    for(int i = 0;i <= dif + 1; i++){
-                        y -= i;
-                        x += i;
-                        int dif2 = abs(center - x);
-                        if(y == center && dif2 %2 == 0){
+                    int dif3 = abs(center - y);
+                    for(int i = 0; i <= dif3; i++){
+                        x += 1;
+                        y -= 1;
+                        if(x == y){
                             coins = 0;
                             break;
                         }
-                        coins = 1;
+                        else{
+                            coins = 1;
+                        }
                     }
                 }
-                else if(y < x){
-                    dif = abs(x - center);
-                    for(int i = 0;i <= dif + 1; i++){
-                        x -= i;
-                        y += i;
-                        int dif3 = abs(center - y);
-                        if(x == center && dif3 %2 == 0){
+                else if(x > y){
+                    int dif4 = abs(center - x);
+                    for(int i = 0; i <= dif4; i++){
+                        x -= 1;
+                        y += 1;
+                        if(x == y){
                             coins = 0;
                             break;
                         }
-                        coins = 1;
+                        else{
+                            coins = 1;
+                        }
                     }
                 }
             }
