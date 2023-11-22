@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+// Prints the multiplication table from 1 to n.
+
 void Table(int n, int arr[][n]){
     for(int i = 0; i < n; i++){
         for(int j = 0; j < n; j++){
